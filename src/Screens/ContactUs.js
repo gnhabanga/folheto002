@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "../Components/Head";
 import Layout from "../Layout/Layout";
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
 
 function ContactUs() {
   const ContactData = [
@@ -17,14 +17,14 @@ function ContactUs() {
       title: "Localize-nos",
       info: "Interagir presencialmente eh uma boa pratica.",
       icon: FiMapPin,
-      contact: "info@folhetos.co.mz",
+      contact: "",
     },
     {
       id: 3,
       title: "Ligue-nos",
       info: "Interagir por chamada eh uma boa pratica.",
       icon: FiPhoneCall,
-      contact: "",
+      contact: "+258 88 88 88 888",
     },
   ];
 

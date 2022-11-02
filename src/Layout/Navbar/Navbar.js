@@ -11,7 +11,7 @@ function Navbar() {
       <div
         className=" shadow-md sticky top-0 z-20"
         style={{
-          background: "linear-gradient(90deg, rgb(253,126,0), rgb(255,207,0))",
+          backgroundColor: "rgb(0,0,0)",
         }}
       >
         <div className="container mx-auto py-6 px-2 lg:grid gap-10 grid-cols-7 justify-between items-center">
@@ -32,7 +32,8 @@ function Navbar() {
             >
               <button
                 type="submit"
-                className="bg-transparent w-12 flex-colo h-12 rounded text-white"
+                className="bg-red-500 w-12 flex-colo h-12 text-white"
+                style={{ borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px" }}
               >
                 <FaSearch size={20} />
               </button>
@@ -50,14 +51,14 @@ function Navbar() {
                 🔥 Novos folhetos
               </p>
             </NavLink>
-            <NavLink to="/contact-us" className={Hover}>
-              <p className="bold" style={{ fontWeight: "bold" }}>
-                Contactar
-              </p>
-            </NavLink>
             <NavLink to="/about-us" className={Hover}>
               <p className="bold" style={{ fontWeight: "bold" }}>
                 Sobre
+              </p>
+            </NavLink>
+            <NavLink to="/contact-us" className={Hover}>
+              <p className="bold" style={{ fontWeight: "bold" }}>
+                Contactar
               </p>
             </NavLink>
             <NavLink to="/login" className={Hover}>
