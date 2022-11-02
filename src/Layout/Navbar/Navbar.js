@@ -32,8 +32,11 @@ function Navbar() {
             >
               <button
                 type="submit"
-                className="bg-red-500 w-12 flex-colo h-12 text-white"
-                style={{ borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px" }}
+                className="bg-yellow-500 w-12 flex-colo h-12 text-white"
+                style={{
+                  borderTopLeftRadius: "25px",
+                  borderBottomLeftRadius: "25px",
+                }}
               >
                 <FaSearch size={20} />
               </button>

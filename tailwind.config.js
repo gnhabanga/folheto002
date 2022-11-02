@@ -4,27 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: '#080A1A',
-        subMain: '#F2000D',
-        dry: '#0B0F29',
-        text: '#C0C0C0',
-        border: '#4b5563',
-        dryGray: '#E0D5D5',
-        main2: 'linear-gradient(90deg, #ff1fa3, #f0e803)'
+        main: "#080A1A",
+        subMain: "#F7B000",
+        dry: "#0B0F29",
+        text: "#C0C0C0",
+        border: "#4b5563",
+        dryGray: "#E0D5D5",
+        main2: "linear-gradient(90deg, #ff1fa3, #f0e803)",
       },
       height: {
-        header: '560px',
-        rate: '400px'
+        header: "560px",
+        rate: "400px",
       },
       fontSize: {
-        h1: '2.6rem',
+        h1: "2.6rem",
       },
       screen: {
-        xs: '475px',
+        xs: "475px",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
-}
+  plugins: [require("@tailwindcss/line-clamp")],
+};
