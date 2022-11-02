@@ -1,13 +1,19 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
+import React from "react";
+import ReactDom from "react-dom/client";
+import "./index.css";
 import App from "./App";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "aos";
+import "aos/dist/aos.css";
+import { BrowserRouter } from "react-router-dom";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
+const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
