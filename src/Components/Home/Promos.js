@@ -24,7 +24,7 @@ function Promos() {
               style={{ borderColor: "yellow-500", borderWidth: "1px" }}
             >
               <FiUser />
-              {"  "} Subscrever
+              Subscrever
             </div>
             <div
               className="flex-colo gap-4 bg-black text-subMain px-6 py-3 rounded font-bold"
