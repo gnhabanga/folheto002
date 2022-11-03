@@ -36,7 +36,7 @@ function AboutUs() {
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="p-8 bg-black rounded-lg">
+                <div className="p-8 bg-border rounded-lg">
                   <span className="text-3xl block font-extrabold">10K</span>
                   <h4 className="text-lg font-semibold my-2">
                     Folhetos Adicionados
@@ -46,7 +46,7 @@ function AboutUs() {
                     lorem ipsum is simply dummy text of printing text
                   </p>
                 </div>
-                <div className="p-8 bg-black rounded-lg">
+                <div className="p-8 bg-border rounded-lg">
                   <span className="text-3xl block font-extrabold">8K</span>
                   <h4 className="text-lg font-semibold my-2">
                     Visualizacoes de Utilizadores
