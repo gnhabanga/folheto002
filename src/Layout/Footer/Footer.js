@@ -62,7 +62,7 @@ function Footer() {
 
   return (
     <>
-      <div className=" py-4 " style={{ backgroundColor: "rgb(0,0,0)" }}>
+      <div className=" py-4 bg-border">
         <div className="container mx-auto px-2">
           <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-6 gap-2 sm:gap-9 lg:gap-7 xl:gap-7 py-10 justify-between">
             {Links.map((link, index) => (
@@ -78,7 +78,7 @@ function Footer() {
                     <li key={index} className="flex items-baseline">
                       <Link
                         to={text.link}
-                        className="text-border inline-block w-full hover:text-subMain"
+                        className="text-dry inline-block w-full hover:text-subMain"
                       >
                         {text.name}
                       </Link>
@@ -96,7 +96,7 @@ function Footer() {
                   className="w-4/6 object-contain h-12"
                 />
               </Link>
-              <p className="leading-7 text-sm text-border mt-3">
+              <p className="leading-7 text-sm text-dry mt-3">
                 <span>
                   Lorem 196 Andrew Road, Suit 200, <br /> New York, NY 10007
                 </span>

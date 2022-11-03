@@ -36,14 +36,14 @@ function ContactUs() {
           {ContactData.map((item) => (
             <div
               key={item.id}
-              className="border border-border flex-colo p-10 bg-dry rounded-lg text-center"
+              className="border border-border flex-colo p-10 bg-black rounded-lg text-center"
             >
               <span className="flex-colo w-20 h-20 mb-4 rounded-full bg-main text-subMain text-2xl">
                 <item.icon />
               </span>
               <h5 className="text-xl font-semibold mb-2">{item.title}</h5>
               <p className="mb-0 text-sm text-text font-semibold">
-                <a href={`mailto:${item.contact}`} className="text-blue-600">
+                <a href={`mailto:${item.contact}`} className="text-black-300">
                   {item.contact}
                 </a>
                 {"  "}
