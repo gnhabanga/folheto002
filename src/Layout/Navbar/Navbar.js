@@ -44,7 +44,7 @@ function Navbar() {
           </div>
           {/* menus */}
           <div className="bold col-span-3 font-medium text-sm hidden xl:gap-14 2xl:gap-20 justify-between lg:flex xl:justify-end items-center">
-            <NavLink to="/" className={Hover}>
+            <NavLink to="/new-ones" className={Hover}>
               <p className="bold" style={{ fontWeight: "bold" }}>
                 🔥 Novos folhetos
               </p>
