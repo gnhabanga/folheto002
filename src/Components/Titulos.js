@@ -8,7 +8,10 @@ function Titulos({ title, Icon, link }) {
       <Icon className="sm:w-6 sm:h-6 w-4 h-4 text-subMain" />
       <h2 className="sm:text-xl font-bold text-lg text-main">{title}</h2>
       <div className="sm:w-6 sm:h-6 w-4 h-4 flex bg-dry items-center rounded-xl">
-        <Link to={`/${link}`} className="sm:w-4 sm:h-4 w-2 h-2 text-subMain">
+        <Link
+          to={`/${link}`}
+          className="sm:w-4 sm:h-4 w-2 h-2 text-subMain m-auto"
+        >
           <BsChevronRight size={20} />
         </Link>
       </div>

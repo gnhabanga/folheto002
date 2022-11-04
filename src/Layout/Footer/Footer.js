@@ -11,6 +11,18 @@ function Footer() {
           link: "/",
         },
         {
+          name: "Folhetos",
+          link: "/new-ones",
+        },
+        {
+          name: "Login",
+          link: "*",
+        },
+        {
+          name: "Favoritos",
+          link: "*",
+        },
+        {
           name: "About us",
           link: "/about-us",
         },
