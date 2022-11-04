@@ -5,6 +5,7 @@ import HomeScreen from "./Screens/HomeScreen";
 import Notfound from "./Screens/Notfound";
 import ContactUs from "./Screens/ContactUs";
 import FolhetosScreen from "./Screens/FolhetosScreen";
+import SingleFolheto from "./Screens/SingleFolheto";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/new-ones" element={<FolhetosScreen />} />
+      <Route path="/folheto/:id" element={<SingleFolheto />} />
       <Route path="*" element={<Notfound />} />
     </Routes>
   );

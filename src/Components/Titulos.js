@@ -1,16 +1,19 @@
-import React from 'react'
-import { BsChevronRight } from 'react-icons/bs'
+import React from "react";
+import { BsChevronRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
-function Titulos({title, Icon}) {
+function Titulos({ title, Icon, link }) {
   return (
-    <div className='w-full flex sm:gap-8 gap-4 items-center'>
-        <Icon className='sm:w-6 sm:h-6 w-4 h-4 text-subMain'/>
-        <h2 className='sm:text-xl font-bold text-lg text-main'>{title}</h2>
-        <button className='sm:w-6 sm:h-6 w-4 h-4 text-subMain'>
-            <BsChevronRight size={20}/>
-        </button>
+    <div className="w-full flex sm:gap-8 gap-4 items-center">
+      <Icon className="sm:w-6 sm:h-6 w-4 h-4 text-subMain" />
+      <h2 className="sm:text-xl font-bold text-lg text-main">{title}</h2>
+      <div className="sm:w-6 sm:h-6 w-4 h-4 flex bg-dry items-center rounded-xl">
+        <Link to={`/${link}`} className="sm:w-4 sm:h-4 w-2 h-2 text-subMain">
+          <BsChevronRight size={20} />
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Titulos
+export default Titulos;

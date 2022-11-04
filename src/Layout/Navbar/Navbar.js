@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaSearch, FaHeart } from "react-icons/fa";
+import { FaSearch, FaHeart, FaHome } from "react-icons/fa";
 import { CgUser } from "react-icons/cg";
 
 function Navbar() {
@@ -43,7 +43,10 @@ function Navbar() {
             </form>
           </div>
           {/* menus */}
-          <div className="bold col-span-3 font-medium text-sm hidden xl:gap-14 2xl:gap-20 justify-between lg:flex xl:justify-end items-center">
+          <div className="bold col-span-3 font-medium text-sm hidden xl:gap-9 2xl:gap-11 justify-between lg:flex xl:justify-end items-center">
+            <NavLink to="/" className={Hover}>
+              <FaHome className="w-5 h-5" />
+            </NavLink>
             <NavLink to="/new-ones" className={Hover}>
               <p className="bold" style={{ fontWeight: "bold" }}>
                 🔥 Novos folhetos
