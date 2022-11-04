@@ -6,7 +6,7 @@ function Folheto({ folheto }) {
   return (
     <>
       <div className="border border-border p-1 transitions relative rounded overflow-hidden">
-        <Link to={`/movies/${folheto.name}`} className="w-full">
+        <Link to={`/folheto/${folheto.name}`} className="w-full">
           <img
             src={require(`../assets/${folheto.image}`)}
             alt={folheto.name}
