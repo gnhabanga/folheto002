@@ -74,7 +74,7 @@ function Footer() {
 
   return (
     <>
-      <div className=" py-4 bg-border">
+      <div className="py-4 bg-border">
         <div className="container mx-auto px-2">
           <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-6 gap-2 sm:gap-9 lg:gap-7 xl:gap-7 py-10 justify-between">
             {Links.map((link, index) => (

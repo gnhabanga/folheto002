@@ -16,7 +16,7 @@ function MaisPopulares() {
   const [nextEl, setNextEl] = useState(null);
   const [prevEl, setPrevEl] = useState(null);
   const classNames =
-    "hover:bg-dry transitions text-sm rounded w-8 h-8 flex-colo bg-dry text-white";
+    "hover:bg-dry transitions text-sm rounded w-8 h-8 flex flex-colo bg-dry text-white";
   return (
     <div className="my-16">
       <Titles title="Mais Populares" Icon={BsBookmarkStarFill} />
@@ -39,7 +39,7 @@ function MaisPopulares() {
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="px-4 hoveres gap-6 text-center absolute bg-black bg-opacity-70 top-0 left-0 right-0 bottom-0">
-                  <button className="w-12 h-12 flex-colo transitions hover:bg-black rounded-full bg-white bg-opacity-30 text-white">
+                  <button className="w-12 h-12 flex flex-colo transitions hover:bg-black rounded-full bg-white bg-opacity-30 text-white">
                     <FaHeart />
                   </button>
                   <Link
@@ -62,7 +62,7 @@ function MaisPopulares() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="w-full px-1 flex-rows gap-6 pt-12">
+        <div className="w-full px-1 flex flex-rows gap-6 pt-12">
           <button className={classNames} ref={(node) => setPrevEl(node)}>
             <BsCaretLeftFill />
           </button>

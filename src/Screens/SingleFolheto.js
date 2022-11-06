@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import { Movies } from "../Data/MovieData";
+import FolhetoInfo from "../Components/Single/FolhetoInfo";
 
 function SingleFolheto() {
   const { id } = useParams();
@@ -9,7 +10,11 @@ function SingleFolheto() {
 
   return (
     <Layout>
-      <h1>{folheto.name}</h1>
+      <div className="w-full container mx-auto mb-6 mt-10">
+        <div>
+          <FolhetoInfo folheto={folheto} />
+        </div>
+      </div>
     </Layout>
   );
 }
