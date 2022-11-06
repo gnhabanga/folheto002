@@ -12,6 +12,9 @@ import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Stars from "../Stars";
 
+import "swiper/swiper.min.css";
+import "swiper/modules/pagination/pagination.min.css";
+
 function MaisPopulares() {
   const [nextEl, setNextEl] = useState(null);
   const [prevEl, setPrevEl] = useState(null);
