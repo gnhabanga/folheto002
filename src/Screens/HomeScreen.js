@@ -43,7 +43,6 @@ function HomeScreen() {
           <NovosFolhetos />
           <FolhetosPopulares />
           <Promos />
-          <MaisPopulares />
         </div>
       )}
     </Layout>
