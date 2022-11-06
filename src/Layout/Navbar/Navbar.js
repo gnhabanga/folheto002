@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaSearch, FaHeart } from "react-icons/fa";
+import { FaSearch, FaHeart, FaHome } from "react-icons/fa";
 import { CgUser } from "react-icons/cg";
 
 function Navbar() {
@@ -8,12 +8,7 @@ function Navbar() {
   const Hover = ({ isActive }) => (isActive ? "text-subMain" : hover);
   return (
     <>
-      <div
-        className=" shadow-md sticky top-0 z-20"
-        style={{
-          backgroundColor: "rgb(0,0,0)",
-        }}
-      >
+      <div className=" shadow-md sticky top-0 z-20 bg-border">
         <div className="container mx-auto py-6 px-2 lg:grid gap-10 grid-cols-7 justify-between items-center">
           <div className="col-span-1 lg:block hidden">
             <Link to="/">
@@ -32,8 +27,11 @@ function Navbar() {
             >
               <button
                 type="submit"
-                className="bg-red-500 w-12 flex-colo h-12 text-white"
-                style={{ borderTopLeftRadius: "25px", borderBottomLeftRadius: "25px" }}
+                className="bg-yellow-500 w-12 flex-colo h-12 text-white"
+                style={{
+                  borderTopLeftRadius: "25px",
+                  borderBottomLeftRadius: "25px",
+                }}
               >
                 <FaSearch size={20} />
               </button>
@@ -45,8 +43,11 @@ function Navbar() {
             </form>
           </div>
           {/* menus */}
-          <div className="bold col-span-3 font-medium text-sm hidden xl:gap-14 2xl:gap-20 justify-between lg:flex xl:justify-end items-center">
+          <div className="bold col-span-3 font-medium text-sm hidden xl:gap-9 2xl:gap-11 justify-between lg:flex xl:justify-end items-center">
             <NavLink to="/" className={Hover}>
+              <FaHome className="w-5 h-5" />
+            </NavLink>
+            <NavLink to="/new-ones" className={Hover}>
               <p className="bold" style={{ fontWeight: "bold" }}>
                 🔥 Novos folhetos
               </p>
