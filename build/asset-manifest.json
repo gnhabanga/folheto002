@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84e52fc1.css",
+    "main.js": "/static/js/main.d2b0a732.js",
+    "static/media/homem_telefone.jpg": "/static/media/homem_telefone.efd23b61a1696c49e8ec.jpg",
+    "static/media/hp.png": "/static/media/hp.0c144f799fbda91354d8.png",
+    "static/media/lenovo.png": "/static/media/lenovo.9abfa233a8dc4b35e6fb.png",
+    "static/media/makro.png": "/static/media/makro.3edf821365a37d9f1e16.png",
+    "static/media/img2.jpg": "/static/media/img2.c5e22bd7de1777d87469.jpg",
+    "static/media/logo.png": "/static/media/logo.fc618ba370bc7dc9612a.png",
+    "index.html": "/index.html",
+    "main.84e52fc1.css.map": "/static/css/main.84e52fc1.css.map",
+    "main.d2b0a732.js.map": "/static/js/main.d2b0a732.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84e52fc1.css",
+    "static/js/main.d2b0a732.js"
+  ]
+}

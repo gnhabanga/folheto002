@@ -1,17 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function FolhetoInfo({ folheto }) {
-  const Dados = [
-    {
-      id: 0,
-      nome: "adkjas",
-    },
-    {
-      id: 0,
-      nome: "alkklsa",
-    },
-  ];
+  const { idcompany } = useParams();
+
   return (
     <>
       <div
@@ -26,7 +18,7 @@ function FolhetoInfo({ folheto }) {
         <div
           className=""
           style={{
-            marginBottom: ".5rem",
+            marginBottom: ".7rem",
             display: "flex",
             alignItems: "center",
           }}
@@ -39,10 +31,10 @@ function FolhetoInfo({ folheto }) {
               lineHeight: "1.2",
             }}
           >
-            Folhetos da {folheto?.name}
+            Folhetos da {idcompany}
           </h1>
         </div>
-        {Dados.map((index, dado) => (
+        {folheto.map((dado, index) => (
           <div
             style={{
               display: "flex",
@@ -52,7 +44,7 @@ function FolhetoInfo({ folheto }) {
               width: "100%",
             }}
           >
-            <div className="xl:mb-0 w-full ">
+            <div className="xl:mb-2 w-full">
               <div
                 className="mb-3 bg-white"
                 style={{
@@ -74,7 +66,7 @@ function FolhetoInfo({ folheto }) {
                   }}
                 >
                   <img
-                    src={require(`../../assets/${folheto.image}`)}
+                    src={require(`../../assets/${dado.image}`)}
                     style={{
                       flex: "1 1 100%",
                       width: "15rem",
@@ -86,8 +78,8 @@ function FolhetoInfo({ folheto }) {
                       alignItems: "center",
                       objectFit: "cover",
                     }}
-                    alt={`Folheto valido ate ${folheto?.validade}`}
-                    title={`Folheto valido ate ${folheto?.validade}`}
+                    alt={`Folheto valido ate ${dado?.validade}`}
+                    title={`Folheto valido ate ${dado?.validade}`}
                   />
                 </div>
                 <div
@@ -101,7 +93,7 @@ function FolhetoInfo({ folheto }) {
                     flexDirection: "column",
                   }}
                 >
-                  <h3 className="mb-3 text-border">{folheto?.name} </h3>
+                  <h3 className="mb-3 text-border">{dado?.name} </h3>
                   <p
                     className=""
                     style={{
@@ -111,7 +103,7 @@ function FolhetoInfo({ folheto }) {
                       display: "block",
                     }}
                   >
-                    {folheto?.validade}
+                    {dado?.validade}
                   </p>
                   <p
                     className="store-flyer__text mb-8 text-border"
@@ -130,7 +122,7 @@ function FolhetoInfo({ folheto }) {
                   >
                     <div className="store-flyer__actions-left">
                       <Link
-                        to={`/folheto/${folheto.company}/${folheto.name}/show`}
+                        to={`/folheto/${idcompany}/${dado.name}/show`}
                         className="btn btn btn-lg btn-primary"
                         style={{
                           color: "#fff",

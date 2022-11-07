@@ -15,7 +15,7 @@ function App() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/new-ones" element={<FolhetosScreen />} />
-      <Route path="/folheto/:idcompany/:id" element={<SingleFolheto />} />
+      <Route path="/folheto/:idcompany" element={<SingleFolheto />} />
       <Route path="/folheto/:idcompany/:id/show" element={<FolhetoShow />} />
       <Route path="*" element={<Notfound />} />
     </Routes>
