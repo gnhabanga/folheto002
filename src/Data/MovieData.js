@@ -47,7 +47,7 @@ export const Movies = [
             name: "Maslow Docs",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
-            image: "img2.png",
+            image: "img2.jpg",
             category: "categoria 5",
             validade: "Dezembro, 2022",
             rating: 3,
