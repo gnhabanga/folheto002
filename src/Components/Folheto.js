@@ -21,7 +21,7 @@ function Folheto({ folheto }) {
             <h3 className="font-semibold truncate">{folheto?.name}</h3>
             <h3 className="font-semibold truncate">{folheto?.validade}</h3>
           </div>
-          <button className="h-9 w-9 text-sm flex-colo transitions hover:big-transparent border-2 border-subMain rounded-md bg-subMain text-white">
+          <button className="h-9 w-9 text-sm flex-colo transitions hover:bg-transparent border-2 border-subMain rounded-md bg-subMain text-white">
             <FaHeart />
           </button>
         </div>
