@@ -99,6 +99,11 @@ export default function FakeSlide() {
             navigation={{ nextEl, prevEl }}
             className="w-full h-full"
             zoom
+            onSlideChange={(swiperCore) => {
+              const { activeIndex, snapIndex, previousIndex, realIndex } =
+                swiperCore;
+              setValue(activeIndex + 1);
+            }}
           >
             {data.map((value, index) => (
               <SwiperSlide
@@ -140,9 +145,16 @@ export default function FakeSlide() {
           >
             <IoIosArrowDropleft size={32} />
           </button>
-          <div style={{ marginLeft: 5, marginRight: 5 }}>
-            Pagina {value} de {data.length - 1}
-          </div>
+          {width >= 1025 ? (
+            <div style={{ marginLeft: 5, marginRight: 5 }}>
+              Pagina {value} de {data.length - 1}
+            </div>
+          ) : (
+            <div style={{ marginLeft: 5, marginRight: 5 }}>
+              Pagina {value} de {data.length}
+            </div>
+          )}
+
           <button
             style={{
               width: 35,
@@ -163,6 +175,7 @@ export default function FakeSlide() {
           backgroundColor: "yellow",
           borderLeftWidth: 1,
           borderLeftColor: "gray",
+          display: "flex",
         }}
       >
         <p>ads</p>
