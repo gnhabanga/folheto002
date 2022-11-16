@@ -8,7 +8,7 @@ import Promos from "../Components/Home/Promos";
 import Layout from "../Layout/Layout";
 
 function HomeScreen() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -43,7 +43,6 @@ function HomeScreen() {
           <NovosFolhetos />
           <FolhetosPopulares />
           <Promos />
-          <MaisPopulares />
         </div>
       )}
     </Layout>

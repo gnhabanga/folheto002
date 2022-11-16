@@ -5,14 +5,21 @@ import { Movies } from "../Data/MovieData";
 import FolhetoInfo from "../Components/Single/FolhetoInfo";
 
 function SingleFolheto() {
-  const { id } = useParams();
-  const folheto = Movies.find((folheto) => folheto.name === id);
+  const { idcompany } = useParams();
+  var folhetoo = "";
 
   return (
     <Layout>
+      {Movies.map((folhetos, index) =>
+        folhetos.companies.map((dado, ind) => {
+          if (dado.name === idcompany) {
+            folhetoo = dado.movies;
+          }
+        })
+      )}
       <div className="w-full container mx-auto mb-6 mt-10">
         <div>
-          <FolhetoInfo folheto={folheto} />
+          <FolhetoInfo folheto={folhetoo} />
         </div>
       </div>
     </Layout>
