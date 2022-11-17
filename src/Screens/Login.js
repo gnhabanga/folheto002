@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <Layout>
       <div className="container mx-auto px-2 my-24 flex-colo">
-        <div className="w-full 2xl:w-2/5 md:w-2/5 gap-5 flex-colo p-14 bg-border rounded-lg border border-dry">
+        <div className="w-full 2xl:w-2/5 md:w-2/5 gap-8 flex-colo p-14 bg-border rounded-lg border border-dry">
           <img
             src={require("../assets/logo.png")}
             alt="logo"
