@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Layout from "../Layout/Layout";
+import { FiLogIn } from "react-icons/fi";
 
-export const Input = ({ placeholder, label, type, bg }) => {
+const Input = ({ placeholder, label, type, bg }) => {
   return (
     <div className="text-sm w-full">
       <label className="text-dry font-semibold">{label}:</label>
@@ -21,7 +23,7 @@ export default function Login() {
   return (
     <Layout>
       <div className="container mx-auto px-2 my-24 flex-colo">
-        <div className="w-full md:w-3/5 flex-colo p-14 2xl:w-2/5 bg-border rounded-lg border border-dry">
+        <div className="w-full 2xl:w-2/5 md:w-2/5 gap-5 flex-colo p-14 bg-border rounded-lg border border-dry">
           <img
             src={require("../assets/logo.png")}
             alt="logo"
@@ -33,6 +35,24 @@ export default function Login() {
             label="Email"
             bg={true}
           />
+          <Input
+            placeholder="***********"
+            type="password"
+            label="Password"
+            bg={true}
+          />
+          <Link
+            to="/dashboard"
+            className="bg-dry transitions hover:bg-main flex-rows gap-4 text-white p-4 rounded-lg w-full"
+          >
+            <FiLogIn /> Sign In
+          </Link>
+          <p className="text-center text-dry">
+            Não tem uma conta?{" "}
+            <Link to="/register" className="text-dryGray font-semibold ml-2">
+              Sign Up
+            </Link>
+          </p>
         </div>
       </div>
     </Layout>
