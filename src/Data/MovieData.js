@@ -5,9 +5,10 @@ export const Movies = [
         name: "Folheto da Makro",
         image: "makro.png",
         validade: "Dezembro, 2023",
-        recomendado: true,
+        recomendado: 2,
         movies: [
           {
+            id: 1,
             name: "Disc Mask",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "1a.jpg",
@@ -17,6 +18,7 @@ export const Movies = [
             rating: 3.5,
           },
           {
+            id: 2,
             name: "Maslow Docs",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
@@ -32,9 +34,10 @@ export const Movies = [
         name: "Folheto da Game",
         image: "hp.png",
         validade: "Dezembro, 2023",
-        recomendado: false,
+        recomendado: 4,
         movies: [
           {
+            id: 1,
             name: "Disc Mask",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "1a.jpg",
@@ -44,6 +47,7 @@ export const Movies = [
             rating: 3.5,
           },
           {
+            id: 2,
             name: "Maslow Docs",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
@@ -59,9 +63,10 @@ export const Movies = [
         name: "Folheto da Lenovo",
         image: "lenovo.png",
         validade: "Dezembro, 2023",
-        recomendado: true,
+        recomendado: 3,
         movies: [
           {
+            id: 1,
             name: "Folheto Lenovo",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo.jpg",
@@ -71,6 +76,7 @@ export const Movies = [
             rating: 3.5,
           },
           {
+            id: 2,
             name: "ThinkPads",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
@@ -81,6 +87,7 @@ export const Movies = [
             company: "dddd",
           },
           {
+            id: 3,
             name: "Pcs de Mesa",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
@@ -91,7 +98,37 @@ export const Movies = [
             company: "dddd",
           },
           {
+            id: 4,
             name: "Laptops bonitos",
+            desc: "Lorem ipsum asdadasdasdasd",
+            titleImage: "lenovo",
+            image: "lenovo.png",
+            category: "categoria 5",
+            validade: "Dezembro, 2022",
+            rating: 3,
+            company: "dddd",
+          },
+        ],
+      },
+      {
+        name: "Folheto da Makro",
+        image: "makro.png",
+        validade: "Dezembro, 2023",
+        recomendado: 2,
+        movies: [
+          {
+            id: 1,
+            name: "Disc Mask",
+            desc: "Lorem ipsum asdadasdasdasd",
+            titleImage: "1a.jpg",
+            image: "hp.png",
+            category: "categoria 2",
+            validade: "Dezembro, 2023",
+            rating: 3.5,
+          },
+          {
+            id: 2,
+            name: "Maslow Docs",
             desc: "Lorem ipsum asdadasdasdasd",
             titleImage: "lenovo",
             image: "lenovo.png",

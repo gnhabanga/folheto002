@@ -6,7 +6,7 @@ import Notfound from "./Screens/Notfound";
 import ContactUs from "./Screens/ContactUs";
 import FolhetosScreen from "./Screens/FolhetosScreen";
 import SingleFolheto from "./Screens/SingleFolheto";
-import FolhetoShow from "./Components/Single/FolhetoShow";
+import FolhetoShow from "./Components/Single/FakeSlide";
 
 function App() {
   return (
