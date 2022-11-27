@@ -13,7 +13,7 @@ export default function FavoriteMovies() {
             Tirar todos Favoritos
           </button>
         </div>
-        <Table data={User} admin={false} />
+        <Table data={User} admin={true} />
       </div>
     </SideBar>
   );
