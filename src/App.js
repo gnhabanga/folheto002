@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Aos from "aos";
+
 import AboutUs from "./Screens/AboutUs";
 import HomeScreen from "./Screens/HomeScreen";
 import Login from "./Screens/Login";
@@ -9,8 +11,12 @@ import ContactUs from "./Screens/ContactUs";
 import FolhetosScreen from "./Screens/FolhetosScreen";
 import SingleFolheto from "./Screens/SingleFolheto";
 import FolhetoShow from "./Components/Single/FakeSlide";
+import Profile from "./Screens/Dashboard/Profile";
 
 function App() {
+  
+  Aos.init()
+  
   return (
     <Routes>
       <Route path="/" element={<HomeScreen />} />
@@ -20,6 +26,7 @@ function App() {
       <Route path="/folheto/:idcompany" element={<SingleFolheto />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/folheto/:idcompany/:id/show" element={<FolhetoShow />} />
       <Route path="*" element={<Notfound />} />
     </Routes>

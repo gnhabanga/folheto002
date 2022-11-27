@@ -25,7 +25,7 @@ export default function Login() {
       <div className="container mx-auto px-2 my-24 flex-colo">
         <div className="w-full 2xl:w-2/5 md:w-2/5 gap-8 flex-colo p-14 bg-border rounded-lg border border-dry">
           <img
-            src={require("../assets/logo.png")}
+            src="https://img.offers-cdn.net/build/folderz4/20221118121242-674943/assets/frontend/build/assets/logos/pt/logo.svg"
             alt="logo"
             className="w-full h-12 object-contain"
           />

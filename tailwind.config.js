@@ -11,6 +11,7 @@ module.exports = {
         border: "#4b5563",
         dryGray: "#E0D5D5",
         main2: "linear-gradient(90deg, #ff1fa3, #f0e803)",
+        redy: "#FF0000",
       },
       height: {
         header: "560px",

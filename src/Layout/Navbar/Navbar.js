@@ -13,7 +13,7 @@ function Navbar() {
           <div className="col-span-1 lg:block hidden">
             <Link to="/">
               <img
-                src="https://img.offers-cdn.net/build/folderz3/20221021121210-568546/assets/frontend/build/assets/logos/pt/logo.svg"
+                src="https://img.offers-cdn.net/build/folderz4/20221118121242-674943/assets/frontend/build/assets/logos/pt/logo.svg"
                 class="navbar_logo"
                 alt="logo"
               />
