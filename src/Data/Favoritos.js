@@ -1,0 +1,32 @@
+export const Favoritos = [
+{
+            id: 1,
+            name: "Disc Mask",
+            desc: "Lorem ipsum asdadasdasdasd",
+            titleImage: "1a.jpg",
+            image: "hp.png",
+            category: "categoria 2",
+            validade: "Dezembro, 2023",
+            rating: 3.5,
+          },
+          {
+            id: 2,
+            name: "Disc Mask",
+            desc: "Lorem ipsum asdadasdasdasd",
+            titleImage: "1a.jpg",
+            image: "hp.png",
+            category: "categoria 2",
+            validade: "Dezembro, 2023",
+            rating: 3.5,
+          },
+          {
+            id: 3,
+            name: "Disc Mask",
+            desc: "Lorem ipsum asdadasdasdasd",
+            titleImage: "1a.jpg",
+            image: "hp.png",
+            category: "categoria 2",
+            validade: "Dezembro, 2023",
+            rating: 3.5,
+          },
+]
