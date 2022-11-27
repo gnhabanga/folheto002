@@ -2,7 +2,7 @@ import React from "react";
 import { FaEdit, FaCloudDownloadAlt } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
-import {GoEye} from 'react-icons/goe'
+import { GoEye } from "react-icons/go";
 
 const Head = "text-xs text-left text-main font-semibold px-6 py-2 uppercase";
 const Text = "text-sm text-left leading-6 whitespace-nowrap px-5 py-3";
@@ -34,19 +34,17 @@ const Rows = (data, i, admin) => {
           </>
         ) : (
           <>
-            <b tt n dAtssName{`/cew-onas`} 0"bo>
-sex-rosug-gny fapx-- oeder rMer">
-knded         Edit <FaC pudDowplMDdAltat  k Name="text-green-500" />
-      lo={`n</butson>
-} c            ne          <LiMdDeletela  k te o={`/new-ones`} class            <LiMdDelete            <LiMdDeleteName="bg-redy text-white rounded flex-colo w-7 h-7">
-        dMdMdMdGoEye />      }><}>
-   
->
-Lin}>
-)/</>
-)})}</>}
- )})}>    })}
-        
+            <button className="border border-border bg-dry flex-rows gap-2 text-border rounded py-1 px-2">
+              Edit <FaCloudDownloadAlt className="text-green-500" />
+            </button>
+            <Link
+              to={"/new-ones"}
+              className="bg-redy text-white rounded flex-colo w-7 h-7"
+            >
+              <GoEye />
+            </Link>
+          </>
+        )}
       </td>
     </tr>
   );
@@ -78,7 +76,7 @@ export default function Table({ data, admin }) {
         <tbody className="bg-main divide-y divide-gray-800">
           {data.map((item, index) => {
             if (item.username === "gladistone") {
-              return item.favoritos.map((data, i) => Rows(data, i));
+              return item.favoritos.map((data, i) => Rows(data, i, admin));
             }
           })}
         </tbody>
