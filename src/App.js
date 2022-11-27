@@ -12,11 +12,12 @@ import FolhetosScreen from "./Screens/FolhetosScreen";
 import SingleFolheto from "./Screens/SingleFolheto";
 import FolhetoShow from "./Components/Single/FakeSlide";
 import Profile from "./Screens/Dashboard/Profile";
+import Password from "./Screens/Dashboard/Password";
+import FavoriteMovies from "./Screens/Dashboard/FavoriteMovies";
 
 function App() {
-  
-  Aos.init()
-  
+  Aos.init();
+
   return (
     <Routes>
       <Route path="/" element={<HomeScreen />} />
@@ -27,6 +28,8 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/password" element={<Password />} />
+      <Route path="/favorite" element={<FavoriteMovies />} />
       <Route path="/folheto/:idcompany/:id/show" element={<FolhetoShow />} />
       <Route path="*" element={<Notfound />} />
     </Routes>

@@ -46,7 +46,7 @@ export default function SideBar({ children }) {
     },
     {
       name: "Mudar Palavra-Passe",
-      link: "/updatepass",
+      link: "/password",
       icon: RiLockPasswordLine,
     },
   ];

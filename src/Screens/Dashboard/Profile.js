@@ -38,10 +38,10 @@ export default function Profile() {
         />
         <div className="flex gap-2 flex-wrap flex-col-reverse sm:flex-row justify-between items-center my-4">
           <button className="bg-redy font-medium transitions hover:bg-main border border-subMain text-white py-3 px-6 rounded w-full sm:w-auto">
-            Delete Account
+            Deletar Conta
           </button>
           <button className="bg-subMain font-medium transitions hover:bg-main border border-subMain text-white py-3 px-6 rounded w-full sm:w-auto">
-            Update Profile
+            Actualizar Perfil
           </button>
         </div>
       </div>
